@@ -7,11 +7,13 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  
+  array
+  array.unshift(`${element}`)
+  return array
 }
 
 function addElementToEndOfArray(array, element) {
-  array = [`${array}`]
+  array
   array = [...array, `${element}`]
   return array
 }
